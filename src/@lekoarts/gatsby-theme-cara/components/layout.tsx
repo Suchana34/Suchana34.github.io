@@ -20,7 +20,7 @@ const Layout = ({ children, className }: LayoutProps) => (
           },
         },
         html: {
-          fontSize: `18px`,
+          fontSize: `13px`,
         },
         body: {
           margin: 0,

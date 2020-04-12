@@ -25,13 +25,11 @@ module.exports = {
         name: `SuchanaChakrabarti_Portfolio`,
         short_name: `SuchanaChakrabarti`,
         description: `MY PORTFOLIO`,
-        start_url: `/`,
-        background_color: `#141821`,
-        theme_color: `#f6ad55`,
-        display: `standalone`
+        start_url: `/`
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-theme-ui`,
   ],
 }

@@ -16,7 +16,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     rel="noreferrer noopener"
     sx={{
       width: `100%`,
-      boxShadow: `lg`,
+      starShadow: `lg`,
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
@@ -28,7 +28,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       "&:hover": {
         color: `white !important`,
         transform: `translateY(-5px)`,
-        boxShadow: `xl`,
+        starShadow: `xl`,
       },
     }}
   >

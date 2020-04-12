@@ -5,7 +5,7 @@ import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
 import SVG from "./svg"
-import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
+import { cloud2, cloud2Wide, waveAnimation } from "../styles/animations"
 // @ts-ignore
 import ContactMDX from "../sections/contact"
 import Footer from "./footer"
@@ -41,19 +41,19 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       <Footer />
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
-      <UpDown>
-        <SVG icon="upDown" hiddenMobile width={8} color="icon_darkest" left="70%" top="20%" />
-        <SVG icon="triangle" width={8} stroke color="icon_darkest" left="25%" top="5%" />
-      </UpDown>
-      <UpDownWide>
-        <SVG icon="triangle" width={12} stroke color="icon_brightest" left="95%" top="50%" />
-        <SVG icon="circle" width={6} color="icon_brightest" left="85%" top="15%" />
-        <SVG icon="upDown" hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
-      </UpDownWide>
-      <SVG icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
-      <SVG icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
-      <SVG icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
-      <SVG icon="hexa" width={8} stroke color="icon_darkest" left="80%" top="70%" />
+      <cloud2>
+        <SVG icon="cloud2" hiddenMobile width={8} color="icon_darkest" left="70%" top="20%" />
+        <SVG icon="cloud2" width={8} stroke color="icon_darkest" left="25%" top="5%" />
+      </cloud2>
+      <cloud2Wide>
+        <SVG icon="cloud2" width={12} stroke color="icon_brightest" left="95%" top="50%" />
+        <SVG icon="cloud1" width={6} color="icon_brightest" left="85%" top="15%" />
+        <SVG icon="cloud2" hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
+      </cloud2Wide>
+      <SVG icon="cloud1" width={6} color="icon_brightest" left="4%" top="20%" />
+      <SVG icon="cloud1" width={12} color="icon_darkest" left="70%" top="60%" />
+      <SVG icon="star" width={12} color="icon_darkest" left="20%" top="30%" />
+      <SVG icon="planet" width={8} stroke color="icon_darkest" left="80%" top="70%" />
     </Divider>
   </div>
 )
