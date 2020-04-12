@@ -8,6 +8,7 @@ export default {
     ...tailwind.colors,
     primary: tailwind.colors.orange[7],
     secondary: tailwind.colors.indigo[1],
+    background: `#37474f`,
     text: tailwind.colors.gray[3],
     heading: tailwind.colors.white,
     divider: tailwind.colors.gray[8],
