@@ -11,7 +11,6 @@ import AboutMDX from "../sections/about"
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="divider"
       speed={0.2}
       offset={offset}
       factor={factor}
