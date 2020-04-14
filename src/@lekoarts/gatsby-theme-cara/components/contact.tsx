@@ -43,7 +43,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       <SVG icon="cloud1" width={12} color="icon_darkest" left="30%" top="20%" />
       <SVG icon="planet" width={8} stroke color="icon_darkest" left="40%" top="20%" />
       
-      <SVG icon="rocket" width={48} stroke color="icon_red" left="80%" top="40%" />
+      <SVG icon="rocket" width={48} stroke color="icon_red" left="10%" top="45%" />
     </Divider>
   </div>
 )

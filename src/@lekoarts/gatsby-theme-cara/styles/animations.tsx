@@ -16,7 +16,7 @@ const up = keyframes`
     transform: translateY(0);
   }
   to {
-    transform: translateY(40px);
+    transform: translateY(90px);
   }
 `
 
@@ -38,7 +38,7 @@ const upDownWideAnimation = css`
 `
 
 const upAnimation = css`
-  ${up} 18s ease-in;
+  ${up} 6s ease-in infinite alternate;
 `
 export const UpDown = styled.div`
   animation: ${upDownAnimation};

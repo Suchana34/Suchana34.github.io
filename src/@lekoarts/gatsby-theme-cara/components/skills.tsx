@@ -22,13 +22,13 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
         <SVG icon="cloud2" width={8} left="25%" top="5%" />
       </UpDown>
       <UpDownWide>
-        <SVG icon="cloud2" width={12} stroke color="icon_brightest" left="95%" top="50%" />
+        <SVG icon="cloud2" width={12} stroke color="icon_brightest" left="15%" top="100%" />
         <SVG icon="cloud1" hiddenMobile width={6} color="icon_brightest" left="85%" top="15%" />
         <SVG icon="star" hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
       </UpDownWide>
-      <SVG icon="cloud1" width={12} color="icon_darkest" left="70%" top="60%" />
+      <SVG icon="cloud1" width={12} color="icon_darkest" left="30%" top="100%" />
       <SVG icon="star" width={6} color="icon_orange" left="10%" top="10%" />
-      <SVG icon="planet" width={8} stroke color="icon_darkest" left="80%" top="70%" />
+      <SVG icon="planet" width={8} stroke color="icon_darkest" left="50%" top="100%" />
       
       <SVG icon="rocket" width={48} stroke color="icon_red" left="70%" top="90%" />
     </Divider>
