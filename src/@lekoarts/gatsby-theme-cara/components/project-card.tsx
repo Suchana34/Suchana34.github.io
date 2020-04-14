@@ -30,6 +30,8 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
         transform: `translateY(-5px)`,
         starShadow: `xl`,
       },
+      boxShadow: `0.5rem 0.5rem 0.5rem #667eea, 0.7rem 0.7rem 0.7rem #764ba2`,
+      
     }}
   >
     <div

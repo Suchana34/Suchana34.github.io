@@ -21,14 +21,21 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
     
     <div style={{marginLeft:6+'rem', marginBottom:0, marginTop:1+'rem'}}>
       <Inner>
+      <div style={{
+          boxShadow: `0 14px 28px #667eea, 0 10px 10px #764ba2`,
+          padding: 2 + `rem`,
+          borderRadius: 2 + `rem`,
+          marginRight: 4 + `rem`
+        }}>
         <Intro />
+        </div>
       </Inner>
     </div>
 
     <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDown>
         <SVG icon="cloud2" hiddenMobile width={48} stroke color="icon_orange" left="60%" top="0%" />
-        <SVG icon="star" width={6} color="icon_darker" left="40%" top="0%" />
+        <SVG icon="star" width={6} color="icon_darker" left="10%" top="0%" />
       </UpDown>
       <UpDownWide>
         <SVG icon="cloud1" width={16} color="icon_darker" left="70%" top="90%" />
@@ -37,7 +44,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
       </UpDownWide>
       <SVG icon="cloud1" width={6} color="icon_darkest" left="4%" top="0%" />
       <SVG icon="cloud2" width={8} stroke color="icon_darker" left="25%" top="0%" />
-      <SVG icon="star" hiddenMobile width={24} color="icon_purple" left="55%" top="90%" />
+      <SVG icon="star" hiddenMobile width={24} color="icon_purple" left="25%" top="10%" />
       <SVG icon="star" width={6} color="icon_darkest" left="50%" top="0%" />
       <SVG icon="star" width={12} color="icon_darkest" left="90%" top="30%" />
       <SVG icon="planet" width={16} stroke color="icon_darker" left="10%" top="70%" />

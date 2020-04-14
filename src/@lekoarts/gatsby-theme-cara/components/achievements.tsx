@@ -23,17 +23,25 @@ const Achievements = ({ offset, factor = 1 }: { offset: number; factor?: number 
       </UpDown>
       <UpDownWide>
         <SVG icon="cloud2" width={12} stroke color="icon_brightest" left="95%" top="0%" />
-        <SVG icon="cloud1" hiddenMobile width={6} color="icon_brightest" left="85%" top="0%" />
-        <SVG icon="star" hiddenMobile width={8} color="icon_darkest" left="45%" top="0%" />
+        <SVG icon="cloud1" hiddenMobile width={6} color="icon_brightest" left="15%" top="0%" />
+        <SVG icon="star" hiddenMobile width={8} color="icon_darkest" left="15%" top="30%" />
       </UpDownWide>
       <SVG icon="cloud1" width={12} color="icon_darkest" left="70%" top="60%" />
-      <SVG icon="star" width={6} color="icon_orange" left="10%" top="0%" />
+      <SVG icon="star" width={6} color="icon_orange" left="10%" top="17%" />
       <SVG icon="planet" width={8} stroke color="icon_darkest" left="80%" top="70%" />
       
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor} sx= {{variant : `texts.bigger`}}>
       <Inner>
+      <div style={{
+          boxShadow: `0 14px 28px #667eea, 0 10px 10px #764ba2`,
+          padding: 2 + `rem`,
+          marginLeft: 1 + `rem`,
+          borderRadius: 2 + `rem`
+        }}>
+      
         <AchievementsMDX />
+        </div>
       </Inner>
     </Content>
   </div>

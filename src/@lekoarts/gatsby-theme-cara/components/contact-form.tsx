@@ -67,28 +67,49 @@ const style = {
     }
 
 }
+
+
+
 const ContactForm = () => {
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        alert("Message sent ✈");
+      } else {
+        alert("Cannot send message now, Make sure you have filled all the details 😕");
+      }
+    };
+    xhr.send(data);
+  }
+  
     return(
     
         <div>
 
         <form 
-        
-        method= "post"
-        action="#"
+
+        onSubmit = {submitForm}
+
+        method= "POST"
+        action="https://formspree.io/xrgajbey"
+        style={style.box}
+
         >
-            <Box
+                <input type="text" name="name" id="full-name" placeholder="Your Full Name" required style={style.input}/>
+                <input type="email" name="_replyto" required id="email-address" placeholder="Your Email" style={style.input}/>
             
-            as = "form"
-            style={style.box}
-            >
-                <input type="text" name="name" id="name" placeholder="Your Name" style={style.input}/>
-                <input type="text" name="email" id="email" placeholder="Your Email" style={style.input}/>
-            
-                <input name="message" id="message" placeholder="Message for me" style={style.textarea}></input>
+                <input name="message" id="message" placeholder="Message for me" required style={style.textarea}/>
                 <input type="submit"  value="Send Me" style={style.button}/>
                 <input type="reset" value="Clear" style={style.button}/>
-            </Box>
         </form>
         </div>
     )
