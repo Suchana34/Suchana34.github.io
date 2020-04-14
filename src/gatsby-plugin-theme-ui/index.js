@@ -27,7 +27,7 @@ export default {
     modes: {
       light: {
         text: tailwind.colors.gray[8],
-        heading: tailwind.colors.black,
+        heading: tailwind.colors.gray[7],
         primary: tailwind.colors.orange[7],
         background: `#cff1ef`,
         footer: `#32ff6a`,

@@ -88,6 +88,12 @@ const Morph = ({ stroke, color, width, left, top, hiddenMobile }: SVGProps) => {
     }  
 
     return(
+      <React.Fragment>
+        
+      <div>
+        {isDark? <h4>Click Me! / Night Mode</h4>: <h4>Click Me! / Light Mode</h4>}
+        
+        </div>
         <svg
         sx={{
           position: `absolute`,
@@ -101,8 +107,11 @@ const Morph = ({ stroke, color, width, left, top, hiddenMobile }: SVGProps) => {
         }}
         onClick={toggleColorMode}
       >
-        {isDark? icon.sun.shape: icon.moon.shape}
+        {isDark? icon.moon.shape: icon.sun.shape}
+
+
       </svg>
+      </React.Fragment>
     )
 }
 

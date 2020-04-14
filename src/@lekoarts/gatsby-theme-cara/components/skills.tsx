@@ -6,16 +6,15 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import AboutMDX from "../sections/about"
-
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+import SkillMDX from "../sections/skills"
+const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
-    
     <Divider
       speed={0.2}
       offset={offset}
       factor={factor}
     />
+    
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>
         <SVG icon="star" hiddenMobile width={6}  left="50%" top="75%" />
@@ -31,14 +30,14 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <SVG icon="star" width={6} color="icon_orange" left="10%" top="10%" />
       <SVG icon="planet" width={8} stroke color="icon_darkest" left="80%" top="70%" />
       
-      <SVG icon="rocket" width={48} stroke color="icon_red" left="70%" top="60%" />
+      <SVG icon="rocket" width={48} stroke color="icon_red" left="70%" top="90%" />
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor} sx= {{variant : `texts.bigger`}}>
       <Inner>
-        <AboutMDX />
+        <SkillMDX />
       </Inner>
     </Content>
   </div>
 )
 
-export default About
+export default Skills

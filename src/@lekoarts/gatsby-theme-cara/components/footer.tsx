@@ -1,36 +1,65 @@
 /** @jsx jsx */
-import { Footer as ThemeFooter, Styled, Flex, jsx } from "theme-ui"
+import { Footer as ThemeFooter, jsx } from "theme-ui"
+import {mdiLinkedin, mdiGithub, mdiGitlab,mdiEmail, mdiTwitter, mdiPost} from '@mdi/js'
+import Icon from '@mdi/react'
+
+const links = [
+  {
+    icon: mdiGithub,
+    link: 'https://github.com/Suchana34'
+  },
+  {
+    icon: mdiGitlab,
+    link: 'https://gitlab.com/Suchana34'
+  },
+  {
+    icon: mdiLinkedin,
+    link: 'https://www.linkedin.com/in/suchana-chakrabarti-770b5616b/'
+  },
+  {
+    icon: mdiEmail,
+    link: "mailto:suchanachakraborty@gmail.com"
+  },
+  {
+    icon: mdiTwitter,
+    link: 'https://twitter.com/this_suchchak'
+  },
+  {
+    icon: mdiPost,
+    link: 'https://medium.com/@suchanachakraborty'
+  }
+]
 
 const Footer = () => {
   return (
     <ThemeFooter>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
-      <br />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          mt: 3,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-        }}
-      >
-        <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_w30.png" alt="LekoArts Logo" />
-        {` `}
-        <Styled.a
-          aria-label="Link to the theme's GitHub repository"
-          sx={{ ml: 2 }}
-          href="https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara"
-        >
-          Theme
-        </Styled.a>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
-        <Styled.a aria-label="Link to the theme author's website" href="https://www.lekoarts.de/en">
-          LekoArts
-        </Styled.a>
-      </Flex>
+      
+      <div style={{fontSize:2+`rem`}}>
+      Built with ❤ by a crazy geek 👧 
+      </div>
+      <br></br>
+      <div>{links.map((link)=>{
+
+        return(
+
+
+          <a
+              href={link.link}
+              target=":blank"
+              style={{
+                margin: 0 + `px ` + 10 + `px`,
+                cursor: "pointer"
+              }}
+            >
+              <Icon
+                path={link.icon}
+                size={2.2}
+                color={'black'}
+              ></Icon>
+            </a>
+        )
+    })}
+      </div>
     </ThemeFooter>
   )
 }

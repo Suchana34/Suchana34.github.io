@@ -1,14 +1,6 @@
 import { keyframes, css } from "@emotion/core"
 import styled from "@emotion/styled"
 
-const wave = keyframes`
-  0% {
-    d: path("M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z");
-  }
-  100% {
-    d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
-  }
-`
 
 const upDown = keyframes`
   from {
@@ -16,6 +8,15 @@ const upDown = keyframes`
   }
   to {
     transform: translateY(30px);
+  }
+`
+
+const up = keyframes`
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(40px);
   }
 `
 
@@ -36,6 +37,9 @@ const upDownWideAnimation = css`
   ${upDownWide} 18s ease-in-out infinite alternate;
 `
 
+const upAnimation = css`
+  ${up} 18s ease-in;
+`
 export const UpDown = styled.div`
   animation: ${upDownAnimation};
   position: absolute;
@@ -54,6 +58,11 @@ export const UpDownWide = styled.div`
   bottom: 0;
 `
 
-export const waveAnimation = (length: string) => css`
-  animation: ${wave} ${length} linear infinite alternate;
+export const Up = styled.div`
+  animation: ${upAnimation};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `
