@@ -42,8 +42,8 @@ const Cara = () => {
       <Skills offset={3} factor={2} />
       <Projects offset={5} factor={4} />
       <Achievements offset={9} factor={3} />
-      <Contact offset={12} factor={1} />
-      <Footer offset={13} factor={1} />
+      <Contact offset={12} factor={2} />
+      <Footer offset={13.7} factor={1} />
 
     </Parallax>
   </Layout>

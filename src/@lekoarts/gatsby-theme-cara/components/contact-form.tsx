@@ -11,59 +11,57 @@ const style = {
       px: 1,
       py: 1,
       background: "none",
-      margin: `3rem 3rem 3rem 3rem`,
     },
     input:{
         color: `black`,
         fontSize: 1.5+ `em`,
         display: `block`,
-        width: 470 + `px`,
-        height: 50 + `px`,
+        width: 30 + `rem`,
+        height: 2 + `rem`,
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
-        background: `#b3aca7`,
-        border: `solid 0.5rem #b3aca7`,
+        background: `#667eea`,
+        border: `0.5rem #b3aca7`,
         transition: `all 0.3s ease-in-out`,
         borderRadius: 1+`rem`,
         outline: 'none',
         
-        boxShadow: `0.7rem 0.7rem 0.7rem #667eea, 0.7rem 0.7rem 0.7rem #764ba2`,
+        boxShadow: `0.7rem 0.7rem 0.7rem #764ba2`,
 
     },
     button:{
         
-        width: 210+ `px`,
-        height: 50 + `px`,
-        marginLeft: `4.5rem`,
-        
+        width: 12+ `rem`,
+        height: 4 + `rem`,
+        marginLeft: `5rem`,
         fontSize: 1.5 + `em`,
-        color: `black`,
-        backgroundColor: `#b3aca7`,
+        color: `gray`,
+        backgroundColor: `#667eea`,
         cursor: `pointer`,
-        border: `solid 0.5rem #b3aca7`,
+        border: `0.5rem #b3aca7`,
         
         borderRadius: 1+`rem`,
         outline: 'none',
         
-      boxShadow: `0.7rem 0.7rem 0.7rem #667eea, 0.7rem 0.7rem 0.7rem #764ba2`,
+      boxShadow: `0.7rem 0.7rem 0.7rem #764ba2`,
 
     },
     textarea:{
         color: `black`,
         fontSize: 1.5+ `em`,
         display: `block`,
-        width: 470 + `px`,
-        height: 100 + `px`,
+        width: 30 + `rem`,
+        height: 7 + `rem`,
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
-        background: `#b3aca7`,
-        border: `solid 0.5rem #b3aca7`,
+        background: `#667eea`,
+        border: `0.5rem #b3aca7`,
         transition: `all 0.3s ease-in-out`,
         borderRadius: 1+`rem`,
         outline: 'none',
 
         
-      boxShadow: `0.7rem 0.7rem 0.7rem #667eea, 0.7rem 0.7rem 0.7rem #764ba2`,
+      boxShadow: `0.7rem 0.7rem 0.7rem #764ba2`,
     }
 
 }

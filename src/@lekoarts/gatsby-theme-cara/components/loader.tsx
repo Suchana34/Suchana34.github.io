@@ -18,13 +18,16 @@ const Loader = () =>(
       </Inner>
         <SVG icon="star" width={19} left="0%" top="5%" />
         <SVG icon="star" width={19} left="10%" top="95%" />
-        <SVG icon="cloud2" width={20} left="20%" top="75%" />
+        <SVG icon="star" width={19} left="18%" top="65%" />
+        <SVG icon="star" width={19} left="80%" top="25%" />
+
+        <SVG icon="planet" width={20} left="20%" top="75%" />
 
         <SVG icon="star" width={12} left="95%" top="50%" />
         <SVG icon="star" width={24} color="icon_brightest" left="85%" top="45%" />
         
-        <SVG icon="cloud2" width={18} left="5%" top="5%" />
-        <SVG icon="cloud1" width={20} left="15%" top="15%" />
+        <SVG icon="star" width={18} left="5%" top="5%" />
+        <SVG icon="star" width={20} left="15%" top="15%" />
       <Rotate>
         
       <SVG icon="planet" width={19}  left="40%" top="50%" />

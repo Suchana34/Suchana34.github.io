@@ -3,6 +3,7 @@ import { Footer as ThemeFooter, jsx } from "theme-ui"
 import {mdiLinkedin, mdiGithub, mdiGitlab,mdiEmail, mdiTwitter, mdiPost} from '@mdi/js'
 import Icon from '@mdi/react'
 import Divider from './../elements/divider';
+import { Up } from './../styles/animations';
 
 const links = [
   {
@@ -41,6 +42,7 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
       factor={factor}
     />
     <Divider fill = "footer" speed={0.2} offset={offset} factor={factor}>
+      <Up>
       <div sx={{ position: `absolute`, bottom: 0, width: `full`, transform: `matrix(3, 0, 0, -3, 0, 0)` }}>
          <svg xmlns="http://www.w3.org/2000/svg" id="contact-wave" viewBox="0 0 800 338.05" preserveAspectRatio="none">
             <path>
@@ -51,6 +53,7 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
             </path>
           </svg>
       </div>
+      </Up>
     </Divider>
     <ThemeFooter>
       <div style={{padding: 2 +`rem`, marginBottom: `1rem`, marginLeft: `2rem` }}>
