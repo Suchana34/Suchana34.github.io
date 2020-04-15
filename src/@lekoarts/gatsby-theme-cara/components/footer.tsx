@@ -53,9 +53,9 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
       </div>
     </Divider>
     <ThemeFooter>
-      <div style={{padding: 2 +`rem`, marginBottom: `12rem`, marginLeft: `2rem` }}>
-      <div style={{fontSize:2+`rem`}}>
-      Built with ❤ by a crazy geek 👧 
+      <div style={{padding: 2 +`rem`, marginBottom: `1rem`, marginLeft: `2rem` }}>
+      <div style={{fontSize:3+`rem`}}>
+      Built with ❤ by a crazy geek 👩‍💻 
       </div>
       <br></br>
       <div>{links.map((link)=>{
@@ -74,7 +74,7 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
               <Icon
                 path={link.icon}
                 size={2.2}
-                color={'#667eea'}
+                color={'black'}
               ></Icon>
             </a>
         )
