@@ -35,14 +35,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor} sx= {{variant : `texts.bigger`}}>
       <Inner>
-        <div style={{
-          boxShadow: `0 14px 28px #667eea, 0 10px 10px #764ba2`,
-          padding: 2 + `rem`,
-          margin: `1rem 1rem 0rem 1rem`,
-          borderRadius: 2 + `rem`
-        }}>
         <AboutMDX />
-        </div>
       </Inner>
     </Content>
   </div>

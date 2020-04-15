@@ -19,16 +19,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
     </div>
 
     
-    <div style={{marginLeft:6+'rem', marginBottom:0, marginTop:1+'rem'}}>
+    <div style={{marginBottom:0, marginTop:1+'rem'}}>
       <Inner>
-      <div style={{
-          boxShadow: `0 14px 28px #667eea, 0 10px 10px #764ba2`,
-          padding: 2 + `rem`,
-          borderRadius: 2 + `rem`,
-          marginRight: 4 + `rem`
-        }}>
         <Intro />
-        </div>
       </Inner>
     </div>
 
