@@ -74,7 +74,7 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
               <Icon
                 path={link.icon}
                 size={2.2}
-                color={'black'}
+                color={'#667eea'}
               ></Icon>
             </a>
         )
