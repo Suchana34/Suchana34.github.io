@@ -36,14 +36,14 @@ const Cara = () => {
   if(state === false){
   return(
   <Layout>
-    <Parallax pages={12} scrolling={true}>
+    <Parallax pages={15} scrolling={true}>
       <Hero offset={0} factor={1}/>
-      <About offset={0.8} factor={1} />
-      <Skills offset={1.8} factor={1} />
-      <Projects offset={3.4} factor={3} />
-      <Achievements offset={7.4} factor={2} />
-      <Contact offset={9} factor={1} />
-      <Footer offset={9.5} factor={2} />
+      <About offset={1} factor={2} />
+      <Skills offset={3} factor={2} />
+      <Projects offset={5} factor={4} />
+      <Achievements offset={9} factor={2} />
+      <Contact offset={11} factor={1} />
+      <Footer offset={12} factor={2} />
 
     </Parallax>
   </Layout>
