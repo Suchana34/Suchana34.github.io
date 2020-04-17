@@ -6,19 +6,27 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 import Morph from "../styles/morph"
+
 // @ts-ignore
 import Intro from "../sections/intro"
+import Navbar from './navbar';
+import { mdiContacts } from '@mdi/js';
+
 
 const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
 
   return(
   <div>
     
-    <div style={{marginLeft:5+'rem', marginBottom:0, marginTop:4+'rem'}}>
+    <div style={{marginLeft:4+'rem', marginBottom:0, marginTop:4.5+'rem'}}>
     <Morph width={1} stroke color="icon_orange" left="40%" top="0%" />
     </div>
 
-    
+
+    <div style={{position:`absolute`, left: `84%`, top:`1%`}}>
+      <Navbar link="/form" icon = {mdiContacts} description = "Contact Me"/>
+    </div>
+
     <div style={{marginBottom:0, marginTop:1+'rem',}}>
       <Inner>
         

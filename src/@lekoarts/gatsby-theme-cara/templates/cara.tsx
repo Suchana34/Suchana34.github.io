@@ -4,15 +4,13 @@ import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Projects from "../components/projects"
 import About from "../components/about"
-import Contact from "../components/contact"
 import Skills from "../components/skills"
 import Achievements from '../components/achievements';
 import Footer from '../components/footer';
 import Loader from '../components/loader'
 
 
-
-const Main = (parallax) => {
+const Main = () => {
   
   
   let [state,setState] = useState(true);
@@ -36,16 +34,13 @@ const Main = (parallax) => {
   if(state === false){
   return(
     <Layout>
-    <Parallax pages={15} scrolling={true} ref = {ref => {
-      parallax = ref
-    }}>
+    <Parallax pages={12} scrolling={true}>
       <Hero offset={0} factor={1}/>
       <About offset={1} factor={2} />
       <Skills offset={3} factor={2} />
       <Projects offset={5} factor={4} />
-      <Achievements offset={9} factor={3} />
-      <Contact offset={12} factor={2} />
-      <Footer offset={13.7} factor={1} />
+      <Achievements offset={9} factor={2} />
+      <Footer offset={10.6} factor={1} />
     </Parallax>
   </Layout>
   )
