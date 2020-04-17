@@ -41,10 +41,15 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
     <Content speed={0.4} offset={offset} factor={factor} sx= {{variant : `texts.bigger`}}>
       <Inner>
         
+      <div style={{
+      boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
+          borderRadius: `2rem`
+        }}>
         <SkillMDX />
         <h1>Have a read to my CV</h1> {`    `}
         <a href = "https://drive.google.com/open?id=17tMvveGjzpDd1g53yY9zMnv8S2BCZiNB"><Icon path = {mdiPdfBox} size={2} color = '#667eea'></Icon>
         </a>
+        </div>
       </Inner>
     </Content>
   </div>

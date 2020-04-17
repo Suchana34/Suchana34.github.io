@@ -35,7 +35,6 @@ const links = [
 const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
   return (
     <div>
-      
     <Divider
       speed={0.2}
       offset={offset}
@@ -56,7 +55,10 @@ const Footer = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
       </Up>
     </Divider>
     <ThemeFooter>
-      <div style={{padding: 2 +`rem`, marginBottom: `1rem`, marginLeft: `2rem` }}>
+      <div style={{padding: 2 +`rem`, marginBottom: `1rem`, marginLeft: `2rem`,
+      boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
+          borderRadius: `2rem`
+        }}> 
       <div style={{fontSize:3+`rem`}}>
       Built with ❤ by a crazy geek 👩‍💻 
       </div>

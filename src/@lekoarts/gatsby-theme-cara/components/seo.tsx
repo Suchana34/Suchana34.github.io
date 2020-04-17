@@ -8,6 +8,7 @@ const defaultProps = {
   pathname: false,
   image: false,
   children: null,
+  url:`/`
 }
 
 type Props = {
@@ -16,9 +17,10 @@ type Props = {
   pathname?: string
   image?: string
   children?: React.ReactNode
+  url?:string
 }
 
-const SEO = ({ title, description, pathname, image, children }: Props) => {
+const SEO = ({ title, description, pathname, image, children,url }: Props) => {
   const site = useSiteMetadata()
 
   const {
@@ -34,7 +36,7 @@ const SEO = ({ title, description, pathname, image, children }: Props) => {
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    url: `${siteUrl}${pathname || ``}`,
+    url: url||`${siteUrl}${pathname || ``}`,
     image: `${siteUrl}${image || defaultImage}`,
   }
   return (

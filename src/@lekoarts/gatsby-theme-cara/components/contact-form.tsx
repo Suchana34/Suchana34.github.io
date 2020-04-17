@@ -1,8 +1,5 @@
 
-import React from "react"
-import {
-    Box,
-  } from 'theme-ui'
+import React, { useState } from "react"
 
 const style = {
     box: {
@@ -11,9 +8,13 @@ const style = {
       px: 1,
       py: 1,
       background: "none",
+      color: `white`,
+      borderRadius: `2rem`,
+      boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
+      overflow: `hidden`
     },
     input:{
-        color: `black`,
+        color: `white`,
         fontSize: 1.5+ `em`,
         display: `block`,
         width: 30 + `rem`,
@@ -21,8 +22,6 @@ const style = {
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
         background: `#667eea`,
-        border: `0.5rem #b3aca7`,
-        transition: `all 0.3s ease-in-out`,
         borderRadius: 1+`rem`,
         outline: 'none',
         
@@ -35,10 +34,9 @@ const style = {
         height: 4 + `rem`,
         marginLeft: `5rem`,
         fontSize: 1.5 + `em`,
-        color: `gray`,
+        color: `white`,
         backgroundColor: `#667eea`,
         cursor: `pointer`,
-        border: `0.5rem #b3aca7`,
         
         borderRadius: 1+`rem`,
         outline: 'none',
@@ -47,7 +45,7 @@ const style = {
 
     },
     textarea:{
-        color: `black`,
+        color: `white`,
         fontSize: 1.5+ `em`,
         display: `block`,
         width: 30 + `rem`,
@@ -55,20 +53,22 @@ const style = {
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
         background: `#667eea`,
-        border: `0.5rem #b3aca7`,
-        transition: `all 0.3s ease-in-out`,
         borderRadius: 1+`rem`,
         outline: 'none',
 
         
       boxShadow: `0.7rem 0.7rem 0.7rem #764ba2`,
-    }
+    },
 
 }
 
 
 
 const ContactForm = () => {
+
+  const [lockscroll, setLockscroll] = useState(false);
+
+
 
   const submitForm = (ev) => {
     ev.preventDefault();
@@ -88,26 +88,30 @@ const ContactForm = () => {
     };
     xhr.send(data);
   }
+
   
     return(
-    
+      
         <div>
-
         <form 
 
-        onSubmit = {submitForm}
+        onSubmit = {
+          submitForm
+        }
+
 
         method= "POST"
         action="https://formspree.io/xrgajbey"
         style={style.box}
 
+
         >
-                <input type="text" name="name" id="full-name" placeholder="Your Full Name" required style={style.input}/>
-                <input type="email" name="_replyto" required id="email-address" placeholder="Your Email" style={style.input}/>
+                <input type="text" name="name" id="full-name" placeholder="Your Full Name" required style={style.input} ></input>
+                <input type="email" name="_replyto" required id="email-address" placeholder="Your Email" style={style.input} />
             
-                <input name="message" id="message" placeholder="Message for me" required style={style.textarea}/>
-                <input type="submit"  value="Send Me" style={style.button}/>
-                <input type="reset" value="Clear" style={style.button}/>
+                <input name="message" id="message" placeholder="Message for me" required style={style.textarea} />
+                <input type="submit"  value="Send Me" style={style.button} />
+                <input type="reset" value="Clear" style={style.button} />
         </form>
         </div>
     )

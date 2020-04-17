@@ -26,7 +26,9 @@
     "gatsby-plugin-netlify": "^2.1.6",
     "gatsby-plugin-offline": "^2.2.7",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-scroll-up-button": "^1.6.4",
+    "react-scrolllock": "^5.0.1"
   },
   "devDependencies": {
     "cross-env": "^5.2.0"

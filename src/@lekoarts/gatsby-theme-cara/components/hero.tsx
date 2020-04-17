@@ -19,8 +19,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
     </div>
 
     
-    <div style={{marginBottom:0, marginTop:1+'rem'}}>
+    <div style={{marginBottom:0, marginTop:1+'rem',}}>
       <Inner>
+        
         <Intro />
       </Inner>
     </div>

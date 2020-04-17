@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     siteTitle: `SuchanaChakrabarti`,
     siteTitleAlt: `SuchanaChakrabarti_Portfolio`,
+    siteurl: `/form`
   },
   plugins: [
     {

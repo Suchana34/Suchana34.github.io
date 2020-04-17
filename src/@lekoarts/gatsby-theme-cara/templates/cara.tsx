@@ -6,13 +6,13 @@ import Projects from "../components/projects"
 import About from "../components/about"
 import Contact from "../components/contact"
 import Skills from "../components/skills"
-import Achievements from './../components/achievements';
-import Footer from './../components/footer';
-import Loader from './../components/loader'
+import Achievements from '../components/achievements';
+import Footer from '../components/footer';
+import Loader from '../components/loader'
 
 
 
-const Cara = () => {
+const Main = (parallax) => {
   
   
   let [state,setState] = useState(true);
@@ -35,8 +35,10 @@ const Cara = () => {
 
   if(state === false){
   return(
-  <Layout>
-    <Parallax pages={15} scrolling={true} >
+    <Layout>
+    <Parallax pages={15} scrolling={true} ref = {ref => {
+      parallax = ref
+    }}>
       <Hero offset={0} factor={1}/>
       <About offset={1} factor={2} />
       <Skills offset={3} factor={2} />
@@ -44,7 +46,6 @@ const Cara = () => {
       <Achievements offset={9} factor={3} />
       <Contact offset={12} factor={2} />
       <Footer offset={13.7} factor={1} />
-
     </Parallax>
   </Layout>
   )
@@ -52,4 +53,4 @@ const Cara = () => {
 
 }
 
-export default Cara
+export default Main

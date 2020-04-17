@@ -38,7 +38,13 @@ const Achievements = ({ offset, factor = 1 }: { offset: number; factor?: number 
     <Content speed={0.4} offset={offset} factor={factor} sx= {{variant : `texts.bigger`}}>
       <Inner>
       
+        
+      <div style={{
+      boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
+          borderRadius: `2rem`
+        }}>
         <AchievementsMDX />
+        </div>
       </Inner>
     </Content>
   </div>
