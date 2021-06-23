@@ -41,8 +41,7 @@ const Achievements = ({ offset, factor = 1 }: { offset: number; factor?: number 
         
       <div style={{
       boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
-          borderRadius: `2rem`,background: `linear-gradient(to right, #7028e480 0%, #e5b2ca80 100%)`,
-          margin: `1rem 1rem 1rem 1rem`, padding: `1rem 1rem 1rem 1rem`
+          borderRadius: `2rem`,background: `linear-gradient(to right, #7028e480 0%, #e5b2ca80 100%)`
         }}>
         <AchievementsMDX />
         </div>
