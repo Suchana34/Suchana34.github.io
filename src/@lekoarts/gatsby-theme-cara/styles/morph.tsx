@@ -91,7 +91,7 @@ const Morph = ({ stroke, color, width, left, top, hiddenMobile }: SVGProps) => {
       <React.Fragment>
         
       <div>
-        {isDark? <h4>Click Me! / Night Mode</h4>: <h4>Click Me! / Light Mode</h4>}
+        {isDark? <h4>Click Below For Light Mode</h4>: <h4>Click Below For Night Mode</h4>}
         
         </div>
         <svg
