@@ -4,24 +4,24 @@ import React, { useState } from "react"
 const style = {
     box: {
       position: `relative`,
-      padding: `3rem 3rem 3rem 3rem`,
+      padding: `2rem 2rem 2rem 2rem`,
       px: 1,
       py: 1,
-      background: "none",
+      background: "linear-gradient(to right, #7028e480 0%, #e5b2ca80 100%)",
       color: `white`,
       borderRadius: `2rem`,
       boxShadow: `0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)`,
       overflow: `hidden`
     },
     input:{
-        color: `white`,
+        color: `black`,
         fontSize: 1.5+ `em`,
         display: `block`,
         width: 30 + `rem`,
         height: 2 + `rem`,
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
-        background: `#667eea`,
+        background: `white`,
         borderRadius: 1+`rem`,
         outline: 'none',
         
@@ -34,8 +34,8 @@ const style = {
         height: 4 + `rem`,
         marginLeft: `5rem`,
         fontSize: 1.5 + `em`,
-        color: `white`,
-        backgroundColor: `#667eea`,
+        color: `black`,
+        backgroundColor: `white`,
         cursor: `pointer`,
         
         borderRadius: 1+`rem`,
@@ -45,14 +45,14 @@ const style = {
 
     },
     textarea:{
-        color: `white`,
+        color: `black`,
         fontSize: 1.5+ `em`,
         display: `block`,
         width: 30 + `rem`,
         height: 7 + `rem`,
         padding: `2rem 2rem 2rem 2rem`,
         margin: `5rem 5rem 5rem 5rem`,
-        background: `#667eea`,
+        background: `white`,
         borderRadius: 1+`rem`,
         outline: 'none',
 

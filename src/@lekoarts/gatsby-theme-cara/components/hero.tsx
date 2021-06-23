@@ -24,7 +24,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => {
 
 
     <div style={{position:`absolute`, left: `84%`, top:`1%`}}>
-      <Navbar link="/form" icon = {mdiContacts} description = "Contact Me"/>
+      <Navbar link="/form"  description = "Contact" icon = {mdiContacts}/>
     </div>
 
     <div style={{marginBottom:0, marginTop:1+'rem',}}>
