@@ -47,7 +47,7 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
         }}>
         <SkillMDX />
         <h1>Have a read to my CV</h1> {`    `}
-        <a href = "https://drive.google.com/file/d/17tMvveGjzpDd1g53yY9zMnv8S2BCZiNB/view?usp=sharing"><Icon path = {mdiPdfBox} size={2} color = '#091665'></Icon>
+        <a href = "https://drive.google.com/file/d/1TR7guq9HK4jNHeUJ1Qbju0pl5xbTlpsr/view?usp=sharing"><Icon path = {mdiPdfBox} size={2} color = '#091665'></Icon>
         </a>
         </div>
       </Inner>
